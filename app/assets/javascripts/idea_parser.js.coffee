@@ -3,7 +3,9 @@ window.IdeaParser =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+    new Raffler.Routers.Ideas()
+    BackBone.history.start()
 
 $(document).ready ->
   IdeaParser.init()

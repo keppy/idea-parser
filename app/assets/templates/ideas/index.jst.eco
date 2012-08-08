@@ -1,0 +1,7 @@
+<h1>Idea Parser</h1>
+
+<ul>
+<% for idea in @ideas.models: %>
+  <li><%= idea.get('name') %></li>
+<% end %>
+</ul>
